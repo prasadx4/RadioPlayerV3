@@ -58,10 +58,10 @@ class Config:
     # Mendatory Variables
     ADMIN = os.environ.get("AUTH_USERS", "1256202333")
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    ADMINS.append(1316963576)
-    API_ID = int(os.environ.get("API_ID", "28123666"))
+    ADMINS.append(1256202333)
+    API_ID = 28123666
     API_HASH = os.environ.get("API_HASH", "e0a07eff8e5ff1dd72edcac6bb213a42")
-    CHAT_ID = int(os.environ.get("CHAT_ID", "-1001732600864"))
+    CHAT_ID = -1001732600864
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5927826433:AAEZKlQ8qVG6w8vuLhYy4UFARu_h_lhm_7k")
     SESSION = os.environ.get("SESSION_STRING", "BQGtIhIAID78A-8la2X_cOfqVoxt_a7se-cpm6YcRE_dcIXl7ndGLAGEGUnxGQMaPYliigXag0ERgyxjPvDR3uKwBFRbVCDTgMnGmLuB10GCKXOQbOkMOCK5Log-9289DzIyQcazcI762flxaSwavO06Q07SkuwW7eO-i2Pg0e_JF0KLORXChslmN3QHlFJI3hdu-pj782OzvI7n32KTXNlG_Eb1t4x_JhAZ-mnHss2UOjCagVgonxIoa6-5TDEFFZlFpEbt4G4CcCgsnDMgiw7xYkG-4KHAVwPy2s9AiQU1zjQzWWquw1QvRiBxKfzON4uzz7liCNUdOtROOpAtRB20bO1zCgAAAAFO9YB4AA")
 
