@@ -39,7 +39,7 @@ ydl_opts = {
 ydl = YoutubeDL(ydl_opts)
 links=[]
 finalurl=""
-STREAM=os.environ.get("STREAM_URL", "http://peridot.streamguys.com:7150/Mirchi")
+STREAM=os.environ.get("STREAM_URL", "https://youtu.be/oVu-aAMV9c8")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 if match:
@@ -56,14 +56,14 @@ else:
 class Config:
 
     # Mendatory Variables
-    ADMIN = os.environ.get("AUTH_USERS", "")
+    ADMIN = os.environ.get("AUTH_USERS", "1256202333")
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     ADMINS.append(1316963576)
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    CHAT_ID = int(os.environ.get("CHAT_ID", ""))
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", "28123666e0a07eff8e5ff1dd72edcac6bb213a42"))
+    API_HASH = os.environ.get("API_HASH", "e0a07eff8e5ff1dd72edcac6bb213a42")
+    CHAT_ID = int(os.environ.get("CHAT_ID", "-1001732600864"))
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5927826433:AAEZKlQ8qVG6w8vuLhYy4UFARu_h_lhm_7k")
+    SESSION = os.environ.get("SESSION_STRING", "BQGtIhIAID78A-8la2X_cOfqVoxt_a7se-cpm6YcRE_dcIXl7ndGLAGEGUnxGQMaPYliigXag0ERgyxjPvDR3uKwBFRbVCDTgMnGmLuB10GCKXOQbOkMOCK5Log-9289DzIyQcazcI762flxaSwavO06Q07SkuwW7eO-i2Pg0e_JF0KLORXChslmN3QHlFJI3hdu-pj782OzvI7n32KTXNlG_Eb1t4x_JhAZ-mnHss2UOjCagVgonxIoa6-5TDEFFZlFpEbt4G4CcCgsnDMgiw7xYkG-4KHAVwPy2s9AiQU1zjQzWWquw1QvRiBxKfzON4uzz7liCNUdOtROOpAtRB20bO1zCgAAAAFO9YB4AA")
 
     # Optional Variables
     STREAM_URL=finalurl
@@ -76,10 +76,10 @@ class Config:
     EDIT_TITLE=os.environ.get("EDIT_TITLE", True)
     if EDIT_TITLE == "False":
         EDIT_TITLE=None
-    RADIO_TITLE=os.environ.get("RADIO_TITLE", "RADIO 24/7 | LIVE")
+    RADIO_TITLE=os.environ.get("RADIO_TITLE", "MUSIC FOREVER | 24/7 LIVE")
     if RADIO_TITLE == "False":
         RADIO_TITLE=None
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
+    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 120))
 
     # Extra Variables ( For Heroku )
     API_KEY = os.environ.get("HEROKU_API_KEY", None)
